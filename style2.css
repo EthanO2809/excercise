@@ -1,0 +1,210 @@
+body {
+    background-color: black;
+    padding: 3px;
+}
+
+.logo {
+    border-radius: 1000px;
+    width: 12%;
+}
+
+.logo-2 {
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff0000;
+    border-radius: 12px;
+  }
+  
+  li {
+    float: left;
+  }
+
+.float-right{
+    float: right;
+    font-size: larger;
+    font-weight: 900;
+}
+
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .hover:hover {
+    background-color: black;
+    color: white;
+  }
+
+.p1 {
+    text-align: center;
+    color: #e4e4e4;
+    font-size: xx-large;
+    animation: shadows 4s infinite;
+}
+
+.p1:hover {
+    text-transform: uppercase;
+}
+
+@keyframes shadows {
+    0% {text-shadow: 0 0 30px #e4e4e4;}
+    25% {text-shadow: 0 0 25px #fbff00;}
+    50% {text-shadow: 0 0 20px #00ff08;}
+    75% {text-shadow: 0 0 15px #0d00ff;}
+    100% {text-shadow: 0 0 25px rgb(255, 0, 0);}
+}
+
+.zoom {
+    padding: 50px;
+    background-image: url("./photo-1611651338412-8403fa6e3599.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.zoom-2 {
+    padding: 50px;
+    background-image: url("./111111.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .zoom-2:hover {
+    transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.zoom-3 {
+    padding: 50px;
+    background-image: url("./22222.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .zoom-3:hover {
+    transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.zoom-4 {
+    padding: 50px;
+    background-image: url("./porsche-monochrome-porsche-carrera-gt-car-wallpaper-preview.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .img-10 {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .zoom-4:hover {
+    transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .flexbox {
+    display: flex;
+    padding: 70px;
+  }
+
+  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flex-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.gif1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 55px;
+}
+.gif2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 55px;
+}
+.gif3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 55px;
+}
+.gif4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 55px;
+}
